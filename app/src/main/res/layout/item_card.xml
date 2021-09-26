@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/PostIM"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_new"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/CaptionTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:text="liad liad liad liadliad liadliad xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccliad liad liad liad liad"
+            android:textSize="16dp" />
+    </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        >
+<LinearLayout
+    android:layout_width="75dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+        <ImageView
+            android:id="@+id/Love"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_heart" />
+
+    <TextView
+        android:id="@+id/loveC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:text="love :152"
+        android:textSize="12dp"/>
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+        <ImageView
+            android:id="@+id/Like"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/facebook_like"/>
+
+            <TextView
+                android:id="@+id/likeC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="like :152"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:id="@+id/Sad"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_sad" />
+
+
+        <TextView
+            android:id="@+id/sadC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:text="sad :152"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+        <ImageView
+            android:id="@+id/Happy"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_happy" />
+
+        <TextView
+            android:id="@+id/happyC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:text="happy :152"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:id="@+id/Brave"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_muscle" />
+
+
+        <TextView
+            android:id="@+id/braveC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:text="brave :152"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Hashtags"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:layout_toStartOf="@+id/saveBTN"
+            android:hint="# The Post's Words That Make You Fill Proud"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/saveBTN"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="save"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        />
+
+</LinearLayout>

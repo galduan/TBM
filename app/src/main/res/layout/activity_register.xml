@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+
+        android:src="@drawable/logo_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sing up"
+
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+        <!-- Link to Login Screen -->
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/email"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="password"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="first name"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="Last name"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="Phone Number"
+        android:imeOptions="actionUnspecified"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+    <Button
+        android:id="@+id/sign_in_button_R"
+        android:layout_width="150dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="sign in "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_to_sign_up" />
+
+    <Button
+        android:id="@+id/back_to_sign_up"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="15dp"
+        android:background="@drawable/custom_button"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Sing Up"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_num" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

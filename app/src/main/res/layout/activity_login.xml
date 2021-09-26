@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".LoginActivity"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background ="@color/blue"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_new" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary" />
+
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="SING IN"
+             />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="SIGN UP"
+            />
+
+        <!-- Link to Forget Password -->
+
+        <TextView
+            android:id="@+id/forget_password_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Forgot Password"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:textAllCaps="true"
+            android:text="about us"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:textSize="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/tal" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/niv"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/galgal"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/liad"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dvir"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            android:text="The app was developed as part of the &quot;Parade of Heroism&quot; acton,which is designed to connect technology with the past and thus enable the message of the heroism of life to be conveyed."/>
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
